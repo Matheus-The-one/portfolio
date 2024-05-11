@@ -1,5 +1,5 @@
 import React from "react";
-import HeroCotent from "../sub/HeroCotent";
+import HeroCotent from "../sub/HeroContent";
 
 
 const Hero = () => {
