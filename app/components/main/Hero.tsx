@@ -1,5 +1,6 @@
 import React from "react";
 import HeroCotent from "../sub/HeroContent";
+import { ModelViewer } from "../sub/Etherium";
 
 
 const Hero = () => {
@@ -15,7 +16,7 @@ const Hero = () => {
         <source src="./blackhole.webm" />
       </video>
       <HeroCotent />
-      
+      <ModelViewer />
     </div>
   );
 };
