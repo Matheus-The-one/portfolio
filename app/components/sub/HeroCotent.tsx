@@ -1,5 +1,6 @@
 import React from 'react'
 import {motion} from "framer-motion"
+import { slideInFromTop } from '@/app/utils/motion'
 
 const HeroCotent = () => {
   return (
