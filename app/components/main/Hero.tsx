@@ -1,11 +1,12 @@
 import React from "react";
 import HeroCotent from "../sub/HeroContent";
-import { ModelViewer } from "../sub/Etherium";
+
 
 
 const Hero = () => {
   return (
     <div className="relative flex flex-col h-full w-full" id="about-me">
+      
       <video
         autoPlay
         muted
@@ -16,7 +17,7 @@ const Hero = () => {
         <source src="./blackhole.webm" />
       </video>
       <HeroCotent />
-      <ModelViewer />
+      
     </div>
   );
 };
