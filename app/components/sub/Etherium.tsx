@@ -7,7 +7,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 export const ModelViewer: React.FC = () => {
     return (
-        <Canvas style={{ height: '500px', width: '100%' }}>
+        <Canvas style={{ height: '200px', width: '40%' }}>
             <EthereumModel />
         </Canvas>
     );
