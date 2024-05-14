@@ -13,6 +13,6 @@ export const Socials = [
     },
     {
         name:"Github",
-        src:"/github-142-svgrepo-com.svg"
+        src:"/gitwhite.svg"
     }
   ];
