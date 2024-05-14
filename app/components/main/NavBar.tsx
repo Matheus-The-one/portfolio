@@ -1,4 +1,4 @@
-import { Socials } from "@/constants";
+import { Socials } from "@/app/constants";
 import Image from "next/image";
 import React from "react";
 
@@ -17,7 +17,8 @@ const Navbar = () => {
             height={70}
             className="cursor-pointer hover:animate-slowspin"
           />
-            <span className="font-bold ml-[10px] hidden md:block text-gray-300">
+
+          <span className="font-bold ml-[10px] hidden md:block text-gray-300">
             WebChain Dev
           </span>
         </a>
@@ -32,7 +33,7 @@ const Navbar = () => {
             </a>
             <a href="#projects" className="cursor-pointer">
               Projects
-              </a>
+            </a>
           </div>
         </div>
 
@@ -50,3 +51,6 @@ const Navbar = () => {
       </div>
     </div>
   );
+};
+
+export default Navbar;
