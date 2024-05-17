@@ -7,27 +7,27 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 export const ModelViewer: React.FC = () => {
     return (
-        <Canvas style={{ height: '100px', width: '35%' }}>
+        <Canvas style={{ height: '200px', width: '65%' }}>
             <EthereumModel />
         </Canvas>
     );
 };
 
 export const EthereumModel: React.FC = () => {
-    const myModel = useLoader(GLTFLoader, '/ethereum_logo_3d.glb');
+    const myModel = useLoader(GLTFLoader, '/planet.glb');
     const modelRef = useRef<Mesh>(null);
 
     useFrame((_state, delta) => {
         if (modelRef.current) {
             modelRef.current.rotation.y += delta / 2;
-            modelRef.current.rotation.x += delta / 2
+            
         }
     });
 
     return (
         <>
-            <pointLight position={[-20, -5, -10]} color="#FFFFFF" intensity={9000} />
-            <pointLight position={[10, 10, 10]} color="#7F00FF" intensity={5000} />
+              <ambientLight intensity={0.3} />
+            <directionalLight position={[10, 10, 10]} intensity={0.5} />
             <primitive object={myModel.scene} ref={modelRef} />
         </>
     );
