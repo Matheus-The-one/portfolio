@@ -26,7 +26,7 @@ export const EthereumModel: React.FC = () => {
 
     return (
         <>
-            <pointLight position={[-10, -10, -10]} color="#000000" intensity={8000} />
+            <pointLight position={[-20, -5, -10]} color="#FFFFFF" intensity={9000} />
             <pointLight position={[10, 10, 10]} color="#7F00FF" intensity={5000} />
             <primitive object={myModel.scene} ref={modelRef} />
         </>
