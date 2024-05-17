@@ -7,7 +7,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 export const ModelViewer: React.FC = () => {
     return (
-        <Canvas style={{ height: '100px', width: '25%' }}>
+        <Canvas style={{ height: '100px', width: '35%' }}>
             <EthereumModel />
         </Canvas>
     );
@@ -20,6 +20,7 @@ export const EthereumModel: React.FC = () => {
     useFrame((_state, delta) => {
         if (modelRef.current) {
             modelRef.current.rotation.y += delta / 2;
+            modelRef.current.rotation.x += delta / 2
         }
     });
 
