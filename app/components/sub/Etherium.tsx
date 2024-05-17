@@ -7,7 +7,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 export const ModelViewer: React.FC = () => {
     return (
-        <Canvas style={{ height: '200px', width: '40%' }}>
+        <Canvas style={{ height: '100px', width: '25%' }}>
             <EthereumModel />
         </Canvas>
     );
@@ -25,8 +25,8 @@ export const EthereumModel: React.FC = () => {
 
     return (
         <>
-            <pointLight position={[-10, -10, -10]} color="#48cc90" intensity={5000} />
-            <pointLight position={[10, 10, 10]} color="#36e2e2" intensity={5000} />
+            <pointLight position={[-10, -10, -10]} color="#FF0000" intensity={8000} />
+            <pointLight position={[10, 10, 10]} color="#7F00FF" intensity={5000} />
             <primitive object={myModel.scene} ref={modelRef} />
         </>
     );
