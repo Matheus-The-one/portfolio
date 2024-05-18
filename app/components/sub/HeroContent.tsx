@@ -10,7 +10,7 @@ import { ModelViewer } from "./Etherium";
 
 const HeroContent = () => {
   const handelBtnClick=()=>{
-    window.open("/public/mate papava.pdf")
+    window.open("https://664905cfa3827ce1ffc91018--jazzy-smakager-f1832a.netlify.app/")
 
   }
   return (
