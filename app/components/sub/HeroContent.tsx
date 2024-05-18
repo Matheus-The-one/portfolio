@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import { slideInFromLeft, slideInFromRight, slideInFromTop } from "@/app/utils/motion";
-import { ModelViewer } from "./Etherium";
 
 const HeroContent = () => {
   const handelBtnClick=()=>{
