@@ -1,18 +1,18 @@
 export const Socials = [
     {
       name: "Discord",
-      src: "/instagram.svg",
+      src: "/discord.svg",
       link: "https://github.com/Matheus-The-one"
     },
     {
       name: "Facebook",
       src: "/facebook.svg",
-      link:"https://github.com/Matheus-The-one"
+      link:"https://www.facebook.com/mate.papava.94"
     },
     {
-      name: "Instagram",
-      src: "/discord.svg",
-      link : "https://github.com/Matheus-The-one"
+      name: "Linkedin",
+      src: "/linkedin.svg",
+      link : "https://www.linkedin.com/in/mate-papava-918896249/"
     },
     {
         name:"Github",
