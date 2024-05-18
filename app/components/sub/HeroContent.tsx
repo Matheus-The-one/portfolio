@@ -9,6 +9,10 @@ import { slideInFromLeft, slideInFromRight, slideInFromTop } from "@/app/utils/m
 import { ModelViewer } from "./Etherium";
 
 const HeroContent = () => {
+  const handelBtnClick=()=>{
+    window.open("/public/mate papava.pdf")
+
+  }
   return (
     <motion.div
       initial="hidden"
@@ -48,10 +52,13 @@ const HeroContent = () => {
            and Software development. Check out my projects and skills. 
         </motion.p>
         <motion.a
+         onClick={handelBtnClick}
           variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+          className="py-2 px-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold cursor-pointer rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-300 max-w-[200px] text-center"
         >
-          See Resume!
+            See Resume!
+        
+        
         </motion.a>
       </div>
 
