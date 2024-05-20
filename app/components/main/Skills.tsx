@@ -8,6 +8,7 @@ import {
   import React from "react";
   import SkillDataProvider from "../sub/SkillDataProvider";
   import SkillText from "../sub/SkillText";
+import { Python } from "../sub/Python";
   
   const Skills = () => {
     return (
@@ -72,7 +73,9 @@ import {
               height={image.height}
               index={index}
             />
+            
           ))}
+          <Python />
         </div>
   
         <div className="w-full h-full absolute">
