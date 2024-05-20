@@ -75,13 +75,13 @@ import { Python } from "../sub/Python";
             />
             
           ))}
-          <Python />
+         
         </div>
-  
+        
         <div className="w-full h-full absolute">
           <div className="w-full h-full z-[-10] opacity-30 absolute flex items-center justify-center bg-cover">
             <video
-              className="w-full h-auto"
+              className="w-full h-[400px]"
               preload="false"
               playsInline
               loop
@@ -90,6 +90,7 @@ import { Python } from "../sub/Python";
               src="/cards-video.webm"
             />
           </div>
+          <Python />
         </div>
       </section>
     );
