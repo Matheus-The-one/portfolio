@@ -3,7 +3,7 @@
 import { Socials } from "@/app/constants";
 import Image from "next/image";
 import React, { useState } from "react";
-import { ModelViewer } from "../sub/Etherium";
+import { ModelViewer } from "../sub/Planet";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
