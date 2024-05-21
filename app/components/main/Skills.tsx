@@ -90,7 +90,7 @@ import { Python } from "../sub/Python";
               src="/cards-video.webm"
             />
           </div>
-          <Python />
+          
         </div>
       </section>
     );
