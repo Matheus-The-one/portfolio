@@ -12,7 +12,7 @@ const page = () => {
     <main className='h-full w-full'>
        <div className=' flex flex-col h-[850px] gap-20'>
         <Hero />
-        <Grid/>
+        <Grid />
         <Encryption />
         <Projects />
         <Footer />
