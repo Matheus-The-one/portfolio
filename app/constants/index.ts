@@ -255,9 +255,9 @@ export const Socials = [
   
   export const gridItems = [
     {
-      id: 1,
-      title: "I prioritize client collaboration, fostering open communication ",
-      description: "",
+      id: 3,
+      title: "My Tech Stack ",
+      description: "I constantly try to improve",
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
@@ -275,9 +275,9 @@ export const Socials = [
       spareImg: "",
     },
     {
-      id: 3,
-      title: "My tech stack",
-      description: "I constantly try to improve",
+      id: 1,
+      title: " prioritize client collaboration, fostering open communication",
+      description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-center",
