@@ -10,7 +10,7 @@ import Grid from './components/main/Grid'
 const page = () => {
   return (
     <main className='h-full w-full'>
-       <div className=' m-14 flex flex-col h-[850px] gap-20'>
+       <div className=' flex flex-col h-[850px] gap-20'>
         <Hero />
         <Grid/>
         <Encryption />
