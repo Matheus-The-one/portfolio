@@ -14,7 +14,7 @@ export const Avatar: React.FC = () => {
 };
 
 export const AvatarModel: React.FC = () => {
-    const myModel = useLoader(GLTFLoader, '/avatarmale.glb');
+    const myModel = useLoader(GLTFLoader, '/big_boy.glb');
     const modelRef = useRef<Mesh>(null);
 
     useFrame((_state, delta) => {
