@@ -26,8 +26,7 @@ export const AvatarModel: React.FC = () => {
 
     return (
         <>
-              <ambientLight intensity={0.3} />
-            <directionalLight position={[10, 10, 10]} intensity={0.5} />
+             
             <primitive object={myModel.scene} ref={modelRef} />
         </>
     );
