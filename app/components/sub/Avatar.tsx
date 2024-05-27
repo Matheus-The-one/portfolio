@@ -2,12 +2,14 @@
 
 import { Canvas, useFrame, useLoader } from '@react-three/fiber';
 import { useRef } from 'react';
-import { Mesh } from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { Group } from 'three';
 
 export const Avatar: React.FC = () => {
     return (
-        <Canvas style={{ height: '200px', width: '65%' }}>
+        <Canvas style={{ height: '200px', width: '55%' }}>
+            <ambientLight intensity={0.5} />
+            <directionalLight position={[0, 10, 5]} intensity={1} />
             <AvatarModel />
         </Canvas>
     );
@@ -15,19 +17,14 @@ export const Avatar: React.FC = () => {
 
 export const AvatarModel: React.FC = () => {
     const myModel = useLoader(GLTFLoader, '/big_boy.glb');
-    const modelRef = useRef<Mesh>(null);
+    const modelRef = useRef<Group>(null);
 
     useFrame((_state, delta) => {
         if (modelRef.current) {
             modelRef.current.rotation.y += delta / 2;
-            
         }
     });
 
-    return (
-        <>
-             
-            <primitive object={myModel.scene} ref={modelRef} />
-        </>
-    );
+    return <primitive object={myModel.scene} ref={modelRef} />;
 };
+
