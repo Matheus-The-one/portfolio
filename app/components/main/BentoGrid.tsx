@@ -3,7 +3,7 @@ import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
 // Also install this npm i --save-dev @types/react-lottie
-// import Lottie from "react-lottie";
+//import Lottie from "react-lottie";
 
 import { cn } from "@/app/utils/cn";
 
@@ -12,7 +12,7 @@ import { BackgroundGradientAnimation } from "../sub/GradientBg";
 import GridGlobe from "../sub/GridGlobe";
 import animationData from "@/app/data/coffeti.json";
 import MagicButton from "../sub/MagicButton";
-import { Avatar } from "../sub/Avatar";
+
 
 export const BentoGrid = ({
   className,
@@ -72,6 +72,7 @@ export const BentoGridItem = ({
     const text = "hsu@jsmastery.pro";
     navigator.clipboard.writeText(text);
     setCopied(true);
+    console.log(text)
   };
   return (
     <div
