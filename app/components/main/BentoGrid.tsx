@@ -14,7 +14,6 @@ import animationData from "@/app/data/coffeti.json";
 import MagicButton from "../sub/MagicButton";
 import { Avatar } from "../sub/Avatar";
 
-
 export const BentoGrid = ({
   className,
   children,
@@ -103,10 +102,9 @@ export const BentoGridItem = ({
         </div>
         <div
           className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"
-            } `}
+           } `}
         >
           <Avatar />
-         
         </div>
         {id === 6 && (
           // add background animation , remove the p tag
