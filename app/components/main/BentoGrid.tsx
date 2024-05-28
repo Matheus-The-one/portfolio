@@ -12,7 +12,8 @@ import { BackgroundGradientAnimation } from "../sub/GradientBg";
 import GridGlobe from "../sub/GridGlobe";
 import animationData from "@/app/data/coffeti.json";
 import MagicButton from "../sub/MagicButton";
-import Lottie from "react-lottie";
+import { Backend_skill, Frontend_skill } from "@/app/constants";
+
 
 
 export const BentoGrid = ({
@@ -140,26 +141,26 @@ export const BentoGridItem = ({
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               {/* tech stack lists */}
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                {leftLists.map((item, i) => (
+                {Frontend_skill.map((skill) => (
                   <span
-                    key={i}
+                    key={skill.skill_name}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
-                    {item}
+                    {skill.skill_name}
                   </span>
                 ))}
                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
               </div>
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
-                {rightLists.map((item, i) => (
+                {Backend_skill.map((skill) => (
                   <span
-                    key={i}
+                    key={skill.skill_name}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
-                    {item}
+                    {skill.skill_name}
                   </span>
                 ))}
               </div>
@@ -176,7 +177,7 @@ export const BentoGridItem = ({
                   }`}
               >
                  {/* <img src="/confetti.gif" alt="confetti" />  */}
-                <Lottie options={defaultOptions} height={200} width={400} /> 
+               
               </div>
 
               <MagicButton
