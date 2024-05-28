@@ -143,11 +143,11 @@ export const BentoGridItem = ({
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
                 {Frontend_skill.map((skill) => (
                   <span
-                    key={skill.skill_name}
+                    key={skill.Image}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
-                    {skill.skill_name}
+                    {skill.Image}
                   </span>
                 ))}
                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
@@ -156,11 +156,11 @@ export const BentoGridItem = ({
                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
                 {Backend_skill.map((skill) => (
                   <span
-                    key={skill.skill_name}
+                    key={skill.Image}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
-                    {skill.skill_name}
+                    <img src={skill.Image} className="w-[30px] h-[30px]"></img>
                   </span>
                 ))}
               </div>
