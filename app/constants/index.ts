@@ -297,13 +297,14 @@ export const Socials = [
   
     {
       id: 5,
-      title: "Currently building a JS Animation library",
-      description: "The Inside Scoop",
+      title: "Currently building a Gnerative AI solution With my start up team",
+      description: "Besides Work",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
       titleClassName: "justify-center md:justify-start lg:justify-center",
       img: "",
       spareImg: "",
+      
     },
     {
       id: 6,
