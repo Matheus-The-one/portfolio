@@ -103,14 +103,14 @@ export const Socials = [
   ];
   export const Frontend_skill = [
     {
-      skill_name: "Html 5",
-      Image: "/html.png",
+      skill_name: "Oracle",
+      Image: "/oracle.png",
       width: 80,
       height: 80,
     },
     {
-      skill_name: "Css",
-      Image: "/css.png",
+      skill_name: "Vercel",
+      Image: "/vercel.jpg",
       width: 80,
       height: 80,
     },
@@ -151,13 +151,13 @@ export const Socials = [
       height: 80,
     },
     {
-      skill_name: "Type Script",
+      skill_name: "TypeScript",
       Image: "/ts.png",
       width: 80,
       height: 80,
     },
     {
-      skill_name: "Next js 14",
+      skill_name: "Next.js14",
       Image: "/next.png",
       width: 80,
       height: 80,
