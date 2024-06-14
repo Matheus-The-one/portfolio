@@ -13,6 +13,7 @@ import GridGlobe from "../sub/GridGlobe";
 import animationData from "@/app/data/coffeti.json";
 import MagicButton from "../sub/MagicButton";
 import { Backend_skill, Frontend_skill } from "@/app/constants";
+import Link from "next/link";
 
 
 
@@ -71,9 +72,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
-    navigator.clipboard.writeText(text);
-    setCopied(true);
+    window.open("https://bloggy-pi-ruby.vercel.app/","__blank")
    
   };
   return (
