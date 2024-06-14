@@ -62,18 +62,9 @@ export const BentoGridItem = ({
 
   const [copied, setCopied] = useState(false);
 
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+ 
 
-  const handleCopy = () => {
-    window.open("https://bloggy-pi-ruby.vercel.app/", "_blank");
-};
+ 
 
   return (
     <div
@@ -181,12 +172,12 @@ export const BentoGridItem = ({
                
               </div>
 
-               <MagicButton
-                 title={copied ? "Opened in new Tab" : "Visit My Blog"}
-                 icon={<IoCopyOutline />}
-                  position="left"
-                 link="https://bloggy-pi-ruby.vercel.app/"
-                otherClasses="!bg-[#161A31]"
+              <MagicButton
+      title={copied ? "Opened in new Tab" : "Visit My Blog"}
+      icon={<IoCopyOutline />}
+      position="left"
+      link="https://bloggy-pi-ruby.vercel.app/"
+      otherClasses="!bg-[#161A31]"
     />
             </div>
           )}
