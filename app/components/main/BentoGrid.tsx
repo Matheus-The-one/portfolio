@@ -72,9 +72,9 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    window.open("https://bloggy-pi-ruby.vercel.app/","__blank")
-   
-  };
+    window.open("https://bloggy-pi-ruby.vercel.app/", "_blank");
+};
+
   return (
     <div
       className={cn(
@@ -181,13 +181,13 @@ export const BentoGridItem = ({
                
               </div>
 
-              <MagicButton
-                title={copied ? "Opened in new Tab" : "Visit My Blog"}
-                icon={<IoCopyOutline />}
-                position="left"
-                handleClick={handleCopy}
+               <MagicButton
+                 title={copied ? "Opened in new Tab" : "Visit My Blog"}
+                 icon={<IoCopyOutline />}
+                  position="left"
+                 link="https://bloggy-pi-ruby.vercel.app/"
                 otherClasses="!bg-[#161A31]"
-              />
+    />
             </div>
           )}
         </div>
