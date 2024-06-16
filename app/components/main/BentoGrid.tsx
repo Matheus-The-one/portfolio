@@ -11,7 +11,7 @@ import { cn } from "@/app/utils/cn";
 import { BackgroundGradientAnimation } from "../sub/GradientBg";
 import GridGlobe from "../sub/GridGlobe";
 import animationData from "@/app/data/coffeti.json";
-import MagicButton from "../sub/MagicButton";
+
 import { Backend_skill, Frontend_skill } from "@/app/constants";
 import Link from "next/link";
 
@@ -60,7 +60,7 @@ export const BentoGridItem = ({
   const leftLists = ["ReactJS", "Express", "Typescript","Javascript","SQL","C/C++"];
   const rightLists = ["Python", "NextJS", "GraphQL","Tailwind CSS","ThreeJS"];
 
-  const [copied, setCopied] = useState(false);
+  const copied= false;
 
  
 
@@ -96,13 +96,13 @@ export const BentoGridItem = ({
           className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"
            } `}
         >
-          {/* <Avatar /> */}
+          <img src="../" alt="stamoai" />
         </div>
         {id === 6 && (
           // add background animation , remove the p tag
-          <BackgroundGradientAnimation>
-            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
-          </BackgroundGradientAnimation>
+          
+            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4  text-3xl text-center md:text-4xl lg:text-7xl"></div>
+          
         )}
 
         <div
@@ -159,27 +159,26 @@ export const BentoGridItem = ({
             </div>
           )}
           {id === 6 && (
-            <div className="mt-5 relative">
+    <div className="mt-5 relative">
               {/* button border magic from tailwind css buttons  */}
               {/* add rounded-md h-8 md:h-8, remove rounded-full */}
               {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
               {/* add handleCopy() for the copy the text */}
-              <div
-                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
-                  }`}
-              >
-                 {/* <img src="/confetti.gif" alt="confetti" />  */}
-               
-              </div>
+             
 
-              <MagicButton
-      title={copied ? "Opened in new Tab" : "Visit My Blog"}
-      icon={<IoCopyOutline />}
-      position="left"
-      link="https://bloggy-pi-ruby.vercel.app/"
-      otherClasses="!bg-[#161A31]"
-    />
-            </div>
+              
+      <div className=" cursor-pointer relative inline-flex h-12 w-full md:w-60 mt-10 overflow-hidden rounded-lg p-[1px] focus:outline-none !bg-[#161A31]">
+        <span className="  absolute inset-0 animate-spin bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+        <a href="https://bloggy-pi-ruby.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+          className="inline-flex h-full w-full  items-center justify-center rounded-lg bg-slate-950 px-7 text-sm font-medium text-white backdrop-blur-3xl gap-2"
+        >
+          Visit My Blog
+        </a>
+      </div>
+    </div>
+            
           )}
         </div>
       </div>
