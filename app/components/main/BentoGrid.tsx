@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
@@ -7,15 +7,12 @@ import { IoCopyOutline } from "react-icons/io5";
 
 import { cn } from "@/app/utils/cn";
 
-
 import { BackgroundGradientAnimation } from "../sub/GradientBg";
 import GridGlobe from "../sub/GridGlobe";
 import animationData from "@/app/data/coffeti.json";
 
 import { Backend_skill, Frontend_skill } from "@/app/constants";
 import Link from "next/link";
-
-
 
 export const BentoGrid = ({
   className,
@@ -42,7 +39,7 @@ export const BentoGridItem = ({
   id,
   title,
   description,
-  //   remove unecessary things here
+  //   remove unnecessary things here
   img,
   imgClassName,
   titleClassName,
@@ -57,14 +54,7 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript","Javascript","SQL","C/C++"];
-  const rightLists = ["Python", "NextJS", "GraphQL","Tailwind CSS","ThreeJS"];
-
-  const copied= false;
-
- 
-
- 
+  const copied = false;
 
   return (
     <div
@@ -92,17 +82,24 @@ export const BentoGridItem = ({
             />
           )}
         </div>
-        <div
-          className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"
-           } `}
-        >
-          <img src="../" alt="stamoai" />
-        </div>
+        {id === 5 && (
+          <div className="absolute inset-x-0 bottom-20 itmes-center justify-center">
+            <button className="absolute  inset-0 bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]">
+              <a
+              
+                href="https://stamoai.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ring-2 ring-purple-500 ring-offset-4 ring-offset-slate-50 dark:ring-offset-slate-900 cursor-pointer h-4 w-8 p-2 rounded-sm "
+              >
+                Visit Our StartUp
+              </a>
+            </button>
+          </div>
+        )}
         {id === 6 && (
           // add background animation , remove the p tag
-          
-            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4  text-3xl text-center md:text-4xl lg:text-7xl"></div>
-          
+          <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4  text-3xl text-center md:text-4xl lg:text-7xl"></div>
         )}
 
         <div
@@ -141,10 +138,8 @@ export const BentoGridItem = ({
                     {skill.skill_name}
                   </span>
                 ))}
-                
               </div>
               <div className=" grid gap-4 grid-cols-3 grid-rows-3 py-4">
-                
                 {Backend_skill.map((skill) => (
                   <span
                     key={skill.Image}
@@ -159,26 +154,24 @@ export const BentoGridItem = ({
             </div>
           )}
           {id === 6 && (
-    <div className="mt-5 relative">
+            <div className="mt-5 relative">
               {/* button border magic from tailwind css buttons  */}
               {/* add rounded-md h-8 md:h-8, remove rounded-full */}
               {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
               {/* add handleCopy() for the copy the text */}
-             
 
-              
-      <div className=" cursor-pointer relative inline-flex h-12 w-full md:w-60 mt-10 overflow-hidden rounded-lg p-[1px] focus:outline-none !bg-[#161A31]">
-        <span className="  absolute inset-0 animate-spin bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-        <a href="https://bloggy-pi-ruby.vercel.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-          className="inline-flex h-full w-full  items-center justify-center rounded-lg bg-slate-950 px-7 text-sm font-medium text-white backdrop-blur-3xl gap-2"
-        >
-          Visit My Blog
-        </a>
-      </div>
-    </div>
-            
+              <div className="cursor-pointer relative inline-flex h-12 w-full md:w-60 mt-10 overflow-hidden rounded-lg p-[1px] focus:outline-none !bg-[#161A31]">
+                <span className="absolute inset-0 animate-spin bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                <a
+                  href="https://bloggy-pi-ruby.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex h-full w-full items-center justify-center rounded-lg bg-slate-950 px-7 text-sm font-medium text-white backdrop-blur-3xl gap-2"
+                >
+                  Visit My Blog
+                </a>
+              </div>
+            </div>
           )}
         </div>
       </div>
