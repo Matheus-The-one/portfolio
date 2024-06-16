@@ -310,7 +310,7 @@ export const Socials = [
       id: 6,
       title: "You Can also see my Blog where I write about Newst Trends of Tech World",
       description: "",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+      className: "lg:col-span-2 md:col-span-3 md:row-span-1 cursor-pointer",
       imgClassName: "",
       titleClassName: "justify-center md:max-w-full max-w-60 text-center",
       img: "",
