@@ -1,6 +1,5 @@
 "use client";
-import { useState } from "react";
-import { IoCopyOutline } from "react-icons/io5";
+
 import { motion } from "framer-motion";
 
 // Also install this npm i --save-dev @types/react-lottie
