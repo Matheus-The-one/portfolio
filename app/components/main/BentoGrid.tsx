@@ -8,12 +8,12 @@ import { motion } from "framer-motion";
 
 import { cn } from "@/app/utils/cn";
 
-import { BackgroundGradientAnimation } from "../sub/GradientBg";
+
 import GridGlobe from "../sub/GridGlobe";
-import animationData from "@/app/data/coffeti.json";
+
 
 import { Backend_skill, Frontend_skill } from "@/app/constants";
-import Link from "next/link";
+
 
 export const BentoGrid = ({
   className,
@@ -44,7 +44,7 @@ export const BentoGridItem = ({
   img,
   imgClassName,
   titleClassName,
-  spareImg,
+ 
 }: {
   className?: string;
   id: number;
@@ -55,7 +55,7 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const copied = false;
+ 
   const handelBtnClick=()=>{
     window.open("https://bloggy-pi-ruby.vercel.app/")
 
