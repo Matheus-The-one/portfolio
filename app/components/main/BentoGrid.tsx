@@ -88,7 +88,7 @@ export const BentoGridItem = ({
         </div>
         {id === 5 && (
           <div className="absolute inset-x-0 bottom-20 itmes-center justify-center">
-            <button className="absolute  inset-0 bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]">
+            <motion.button className="absolute  inset-0 bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]">
             <motion.a
                 onClick={handelBtnClick}
                 target="_blank"
@@ -97,7 +97,7 @@ export const BentoGridItem = ({
               >
                 Visit Our StartUp
                 </motion.a>
-            </button>
+            </motion.button>
           </div>
         )}
         {id === 6 && (
