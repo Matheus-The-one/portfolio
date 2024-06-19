@@ -91,7 +91,6 @@ export const BentoGridItem = ({
             <button className="absolute  inset-0 bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]">
             <motion.a
                 onClick={handelBtnClick}
-                
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ring-2 ring-purple-500 ring-offset-4 ring-offset-slate-50 dark:ring-offset-slate-900 cursor-pointer h-4 w-8 p-2 rounded-sm "
