@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
+import { motion } from "framer-motion";
 
 // Also install this npm i --save-dev @types/react-lottie
 //import Lottie from "react-lottie";
@@ -55,7 +56,10 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   const copied = false;
+  const handelBtnClick=()=>{
+    window.open("https://bloggy-pi-ruby.vercel.app/")
 
+  }
   return (
     <div
       className={cn(
@@ -85,15 +89,15 @@ export const BentoGridItem = ({
         {id === 5 && (
           <div className="absolute inset-x-0 bottom-20 itmes-center justify-center">
             <button className="absolute  inset-0 bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]">
-              <a
-              
-                href="https://stamoai.vercel.app/"
+            <motion.a
+                onClick={handelBtnClick}
+                
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ring-2 ring-purple-500 ring-offset-4 ring-offset-slate-50 dark:ring-offset-slate-900 cursor-pointer h-4 w-8 p-2 rounded-sm "
               >
                 Visit Our StartUp
-              </a>
+                </motion.a>
             </button>
           </div>
         )}
