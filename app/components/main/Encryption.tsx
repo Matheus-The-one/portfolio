@@ -4,11 +4,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import { slideInFromTop } from "@/app/utils/motion";
 import Image from "next/image";
+// import { ModelAI } from "../sub/AI";
 
 const Encryption = () => {
   return (
     <div className="flex flex-row relative items-center justify-center min-h-screen w-full h-full">
       <div className="absolute w-auto h-auto top-0 z-[5]">
+        
         <motion.div
           variants={slideInFromTop}
           className="text-[40px] font-medium text-center text-gray-200"
@@ -42,6 +44,7 @@ const Encryption = () => {
 
         <div className="Welcome-box px-[15px] py-[4px] z-[20] brder my-[20px] border-[#7042f88b] opacity-[0.9]">
           <h1 className="Welcome-text text-[12px]">Encryption</h1>
+          
         </div>
       </div>
       <div className="absolute z-[20] bottom-[10px] px-[5px]">
@@ -49,7 +52,7 @@ const Encryption = () => {
           Secure your data with end-to-end encryption
         </div>
       </div>
-
+      {/* <ModelAI /> */}
       <div className="w-full flex items-start justify-center absolute">
         <video
           loop
