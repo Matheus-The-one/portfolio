@@ -30,7 +30,7 @@ export const EthereumModel: React.FC = () => {
         <>
             <ambientLight intensity={0.3} />
             <directionalLight position={[1, 1, 0.8]} intensity={0.5} />
-            <group ref={group} scale={[1,1,1]}>
+            <group ref={group} scale={[1,1,1]} rotation={[Math.PI / 6,0,0]}>
                 {Object.values(nodes).map((node, index) => (
                     <primitive key={index} object={node} />
                 ))}
