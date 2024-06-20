@@ -12,7 +12,7 @@ export const ModelAI: React.FC = () => {
 };
 
 export const EthereumModel: React.FC = () => {
-    const group = useRef();
+    const group = useRef(null);
     const { nodes, materials, animations } = useGLTF('/watsonn.glb');
     const { actions } = useAnimations(animations, group);
 
