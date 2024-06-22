@@ -5,6 +5,7 @@ import Encryption from './components/main/Encryption'
 import Projects from './components/main/Projects'
 import Footer from './components/main/Footer'
 import { ModelAI } from './components/sub/Ai'
+import FrontEndSkills from './components/main/FrontEndSkills'
 
 
 
@@ -13,7 +14,7 @@ const page = () => {
     <main className='h-full w-full'>
        <div className=' flex flex-col h-[850px] gap-20'>
         <Hero />
-        <div className='w-full h-full'><ModelAI /></div>
+        <FrontEndSkills />
         
         <Encryption />
         <Projects />
