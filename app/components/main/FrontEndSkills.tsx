@@ -20,24 +20,36 @@ const skillSections: SkillSection[] = [
       { name: 'React', image: '/react.png', description: 'UI library for building interfaces' },
       { name: 'TypeScript', image: '/ts.png', description: 'Typed superset of JavaScript' },
       { name: 'Tailwind CSS', image: '/tailwind.png', description: 'Utility-first CSS framework' },
+      { name: 'Next', image: '/next.png', description: 'React framework' },
+      { name: 'redux', image: '/redux.png', description: 'Utility-first  framework' },
+      
     ],
   },
   {
     title: 'Backend Skills',
     skills: [
-      { name: 'Node.js', image: '/nodejs.png', description: 'JavaScript runtime for server-side development' },
+      { name: 'Node.js', image: '/node-js.png', description: 'JavaScript runtime for server-side development' },
       { name: 'Express', image: '/express.png', description: 'Web application framework for Node.js' },
       { name: 'MongoDB', image: '/mongodb.png', description: 'NoSQL database for modern applications' },
       { name: 'GraphQL', image: '/graphql.png', description: 'Query language for APIs' },
+      { name: 'mysql', image: '/mysql.png', description: 'Query language ' },
+      { name: 'Oracle', image: '/oracle.png', description: 'database managment tool' },
+      { name: 'Prisma', image: '/prisma.webp', description: 'Utility-first CSS framework' },
+      { name: 'Docker', image: '/docker.webp', description: 'Platform for containerized applications' },
     ],
   },
   {
     title: 'Other Skills',
     skills: [
-      { name: 'Git', image: '/git.png', description: 'Version control system' },
-      { name: 'Docker', image: '/docker.png', description: 'Platform for containerized applications' },
-      { name: 'AWS', image: '/aws.png', description: 'Cloud computing platform' },
+      { name: 'Git', image: '/gitwhite.png', description: 'Version control system' },
+      
+      { name: 'AWS', image: '/AWS.webp', description: 'Cloud computing platform' },
       { name: 'Figma', image: '/figma.png', description: 'Collaborative interface design tool' },
+      { name: 'Firebase', image: '/Firebase.png', description: 'Collaborative interface design tool' },
+      { name: 'Vercel', image: '/vercel.webp', description: 'deplying for animation' },
+      { name: 'Blender', image: '/blender.webp', description: 'Utility-first CSS framework' },
+      { name: 'Framer-Motion', image: '/framer.png', description: 'framing platform' },
+      
     ],
   },
 ];
