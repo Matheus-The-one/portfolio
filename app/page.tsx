@@ -9,6 +9,7 @@ import FrontEndSkills from './components/main/FrontEndSkills'
 
 
 
+
 const page = () => {
   return (
     <main className='h-full w-full'>
