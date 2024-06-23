@@ -5,7 +5,7 @@ import { useGLTF, useAnimations } from '@react-three/drei';
 
 export const ModelAI: React.FC = () => {
     return (
-        <Canvas style={{ height: '500px', width: '500px' }}>
+        <Canvas style={{ height: '400px', width: '400px' }}>
             <EthereumModel />
         </Canvas>
     );
@@ -28,8 +28,8 @@ export const EthereumModel: React.FC = () => {
 
     return (
         <>
-            <ambientLight intensity={0.3} />
-            <directionalLight position={[1, 1, 0.8]} intensity={0.5} />
+            <ambientLight intensity={0.9} />
+            <directionalLight position={[1, 1, 0.8]} intensity={0.9} />
             <group ref={group} scale={[1,1,1]} rotation={[Math.PI / 8,Math.PI / 18,0]}>
                 {Object.values(nodes).map((node, index) => (
                     <primitive key={index} object={node} />
