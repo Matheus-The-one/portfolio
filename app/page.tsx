@@ -1,30 +1,29 @@
-import React from 'react'
-import Hero from './components/main/Hero'
+import Hero from '@/components/Hero';
+import Intro from '@/components/Intro';
+import { ScrollProvider } from '@/components/Providers/ScrollProvider';
+import RecentPosts from '@/components/RecentPosts';
+import SectionContainer from '@/components/SectionContainer';
+import TopTracks from '@/components/Spotify/TopTracks';
+import Works from '@/components/Work/Works';
+import { allCoreContent, sortedBlogPost } from '@/lib/utils/contentlayer';
+import { allBlogs } from 'contentlayer/generated';
+import { Suspense } from 'react';
 
-import Encryption from './components/main/Encryption'
-import Projects from './components/main/Projects'
-import Footer from './components/main/Footer'
+export default function Page() {
+  const sortedPosts = sortedBlogPost(allBlogs);
+  const posts = allCoreContent(sortedPosts);
 
-import FrontEndSkills from './components/main/FrontEndSkills'
-
-
-
-
-const page = () => {
   return (
-    <main className='h-full w-full'>
-       <div className=' flex flex-col h-[850px] gap-20'>
-        <Hero />
-        <FrontEndSkills />
-        
-        <Encryption />
-        <Projects />
-        <Footer />
-       </div>
-   </main>
-  )
-   
-   
+    <ScrollProvider>
+      <Hero />
+      <Intro />
+      <Works />
+      <SectionContainer>
+        <RecentPosts posts={posts} />
+        <Suspense fallback="loading..">
+          <TopTracks />
+        </Suspense>
+      </SectionContainer>
+    </ScrollProvider>
+  );
 }
-
-export default page
