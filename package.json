@@ -1,5 +1,5 @@
 {
-  "name": "dalelarroder.com",
+  "name": "mate-papava-portfolio",
   "version": "2.0.0",
   "private": true,
   "scripts": {
@@ -8,7 +8,7 @@
     "postbuild": "yarn rss",
     "rss": "cross-env NODE_OPTIONS='--experimental-json-modules' node ./scripts/generate-rss.mjs",
     "serve": "next start",
-    "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts",
+    "lint": "next lint --fix",
     "prepare": "husky install"
   },
   "engines": {
