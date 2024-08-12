@@ -5,7 +5,6 @@
   "scripts": {
     "dev": "contentlayer dev & next dev",
     "build": "next build",
-    "postbuild": "yarn rss",
     "serve": "next start",
     "lint": "next lint --fix",
     "prepare": "husky install"
