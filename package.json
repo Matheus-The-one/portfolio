@@ -1,12 +1,14 @@
 {
-  "name": "mate-papava-portfolio",
+  "name": "mate papava",
   "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "contentlayer dev & next dev",
     "build": "next build",
     "postbuild": "yarn rss",
+    "rss": "cross-env NODE_OPTIONS='--experimental-json-modules' node ./scripts/generate-rss.mjs",
     "serve": "next start",
+    
     "prepare": "husky install"
   },
   "engines": {
