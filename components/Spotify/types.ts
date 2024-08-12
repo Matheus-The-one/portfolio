@@ -5,7 +5,11 @@ export type Artist = {
   href: string;
 };
 
-export type TrackInfo = { artists: Artist[]; external_urls: { spotify: string }; name: string };
+export type TrackInfo = {
+  artists: Artist[];
+  external_urls: { spotify: string };
+  name: string;
+};
 
 export type Song = {
   songUrl: string;
@@ -18,12 +22,12 @@ export type TopTracks = {
 };
 
 export const nowPlayingEmptyState: NowPlayingSong = {
-  album: '',
-  albumImageUrl: '',
-  artist: '',
+  album: "",
+  albumImageUrl: "",
+  artist: "",
   isPlaying: false,
-  songUrl: '',
-  title: '',
+  songUrl: "",
+  title: "",
 };
 
 export type NowPlayingSong = {

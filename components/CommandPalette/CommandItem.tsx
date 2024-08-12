@@ -1,5 +1,5 @@
-import { Command } from 'cmdk';
-import { ReactNode, useCallback } from 'react';
+import { Command } from "cmdk";
+import { ReactNode, useCallback } from "react";
 
 interface CommandItemProps {
   id: string;
@@ -9,13 +9,19 @@ interface CommandItemProps {
   icon?: ReactNode;
 }
 
-export default function CommandItem({ id, name, onSelect, setOpen, icon }: CommandItemProps) {
+export default function CommandItem({
+  id,
+  name,
+  onSelect,
+  setOpen,
+  icon,
+}: CommandItemProps) {
   const handleSelect = useCallback(
     (v: string) => {
       onSelect(v);
       setOpen(false);
     },
-    [onSelect, setOpen]
+    [onSelect, setOpen],
   );
 
   return (

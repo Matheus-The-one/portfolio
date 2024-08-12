@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 interface Props {
   children: ReactNode;
 }
@@ -11,14 +11,14 @@ export default function UsesLayout({ children }: Props) {
           What I Use
         </h1>
         <span className="text-gray-700  dark:text-gray-300">
-            You can See It on MY-- 
+          You can See It on MY--
           <a
             href=""
             className="underline-magical"
             target="_blank"
             rel="noreferrer"
           >
-             GITHUB
+            GITHUB
           </a>
         </span>
       </div>

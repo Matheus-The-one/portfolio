@@ -1,11 +1,11 @@
-import PostCard from '@/components/PostCard';
-import { Blog } from 'contentlayer/generated';
-import Link from 'next/link';
+import PostCard from "@/components/PostCard";
+import { Blog } from "contentlayer/generated";
+import Link from "next/link";
 
 const MAX_DISPLAY = 2;
 
 interface RecentPosts {
-  posts: Omit<Blog, 'body' | '_raw' | '_id'>[];
+  posts: Omit<Blog, "body" | "_raw" | "_id">[];
 }
 
 export default function RecentPosts({ posts }: RecentPosts) {
@@ -22,7 +22,10 @@ export default function RecentPosts({ posts }: RecentPosts) {
       {posts.length > MAX_DISPLAY && (
         <div className="flex justify-end text-base font-medium leading-6">
           <Link href="/blog">
-            <span className="underline-magical cursor-pointer font-bold" aria-label="all posts">
+            <span
+              className="underline-magical cursor-pointer font-bold"
+              aria-label="all posts"
+            >
               Read All Post &rarr;
             </span>
           </Link>

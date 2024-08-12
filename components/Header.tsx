@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import classNames from 'classnames';
-import headerNavLinks from 'content/headerNavLinks';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import CommandPalette from './CommandPalette/CommandPalette';
-import MobileNav from './MobileNav';
-import SectionContainer from './SectionContainer';
-import ThemeSwitch from './ThemeSwitch';
+import classNames from "classnames";
+import headerNavLinks from "content/headerNavLinks";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import CommandPalette from "./CommandPalette/CommandPalette";
+import MobileNav from "./MobileNav";
+import SectionContainer from "./SectionContainer";
+import ThemeSwitch from "./ThemeSwitch";
 
 export default function Header() {
   const pathName = usePathname();
@@ -20,10 +20,10 @@ export default function Header() {
             <Link
               href="/"
               className={classNames(
-                'horizontal-underline hidden text-3xl font-extrabold sm:block',
+                "horizontal-underline hidden text-3xl font-extrabold sm:block",
                 {
-                  'horizontal-underline-active': pathName === '/',
-                }
+                  "horizontal-underline-active": pathName === "/",
+                },
               )}
               aria-label="MP."
             >
@@ -39,8 +39,8 @@ export default function Header() {
                     prefetch
                     key={title}
                     href={href}
-                    className={classNames('horizontal-underline text-base', {
-                      'horizontal-underline-active': active,
+                    className={classNames("horizontal-underline text-base", {
+                      "horizontal-underline-active": active,
                     })}
                     aria-label={title}
                   >

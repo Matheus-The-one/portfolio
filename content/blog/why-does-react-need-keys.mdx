@@ -1,10 +1,10 @@
 ---
-title: 'Why does React need keys?'
-date: '2022-07-31'
-tags: ['ReactJs', Snippets]
+title: "Why does React need keys?"
+date: "2022-07-31"
+tags: ["ReactJs", Snippets]
 draft: false
-author: 'Dale Larroder'
-summary: 'This article will show you what is the purpose if the “key” prop in React and some best practices around it.'
+author: "Dale Larroder"
+summary: "This article will show you what is the purpose if the “key” prop in React and some best practices around it."
 ---
 
 ## Overview
@@ -61,13 +61,13 @@ Robin Pokorny has an amazing [article](https://robinpokorny.medium.com/index-as-
 const todos = [
   {
     id: 22,
-    name: 'eat breakfast',
+    name: "eat breakfast",
   },
   // ....
-]
+];
 
 // Much better
-todos.map((todo) => <Todo {...todo} key={todo.id} />)
+todos.map((todo) => <Todo {...todo} key={todo.id} />);
 ```
 
 # Conclusion

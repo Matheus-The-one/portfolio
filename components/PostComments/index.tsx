@@ -1,10 +1,10 @@
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
 const GiscusComponent = dynamic(
   () => {
-    return import('./Giscus');
+    return import("./Giscus");
   },
-  { ssr: false }
+  { ssr: false },
 );
 
 const PostComments = () => {

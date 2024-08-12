@@ -1,10 +1,10 @@
-import siteMetadata from 'content/siteMetadata';
-import Link from 'next/link';
-import { Suspense } from 'react';
-import { AiFillLinkedin } from 'react-icons/ai';
-import { FaGithub, FaSpotify, FaSteam, FaTwitter } from 'react-icons/fa';
-import SectionContainer from './SectionContainer';
-import NowPlaying from './Spotify/NowPlaying';
+import siteMetadata from "content/siteMetadata";
+import Link from "next/link";
+import { Suspense } from "react";
+import { AiFillLinkedin } from "react-icons/ai";
+import { FaGithub, FaSpotify, FaSteam, FaTwitter } from "react-icons/fa";
+import SectionContainer from "./SectionContainer";
+import NowPlaying from "./Spotify/NowPlaying";
 
 export default function Footer() {
   return (
@@ -34,7 +34,12 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href={siteMetadata.github} target="_blank" rel="noreferrer" aria-label="github">
+                <a
+                  href={siteMetadata.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="github"
+                >
                   <FaGithub className="sm:text-lg" />
                 </a>
               </li>
@@ -59,7 +64,12 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href={siteMetadata.steam} target="_blank" rel="noreferrer" aria-label="steam">
+                <a
+                  href={siteMetadata.steam}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="steam"
+                >
                   <FaSteam className="sm:text-lg" />
                 </a>
               </li>

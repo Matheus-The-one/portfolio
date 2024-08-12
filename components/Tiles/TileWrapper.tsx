@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { ReactNode, useContext, useRef } from 'react';
-import { ScrollContext } from '../Providers/ScrollProvider';
-import { TileContext } from './TileContext';
+import { ReactNode, useContext, useRef } from "react";
+import { ScrollContext } from "../Providers/ScrollProvider";
+import { TileContext } from "./TileContext";
 
 interface WrapperProps {
   children: ReactNode;
@@ -22,8 +22,10 @@ export default function TileWrapper({ children, numOfPages }: WrapperProps) {
     const screenH = window.innerHeight;
     const halfH = screenH / 2;
     const percentY =
-      Math.min(clientHeight + halfH, Math.max(-screenH, scrollY - offsetTop) + halfH) /
-      clientHeight;
+      Math.min(
+        clientHeight + halfH,
+        Math.max(-screenH, scrollY - offsetTop) + halfH,
+      ) / clientHeight;
 
     currentPage = percentY * numOfPages;
   }
@@ -34,7 +36,7 @@ export default function TileWrapper({ children, numOfPages }: WrapperProps) {
         className="relative z-10 bg-black dark:bg-white"
         ref={refContainer}
         style={{
-          height: numOfPages * 100 + 'vh',
+          height: numOfPages * 100 + "vh",
         }}
       >
         {children}

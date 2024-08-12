@@ -1,5 +1,5 @@
-import kebabCase from '@/lib/utils/kebabCase';
-import type { Blog, DocumentTypes } from 'contentlayer/generated';
+import kebabCase from "@/lib/utils/kebabCase";
+import type { Blog, DocumentTypes } from "contentlayer/generated";
 
 export function dateSortDesc(a: string, b: string) {
   if (a > b) return -1;
@@ -8,7 +8,9 @@ export function dateSortDesc(a: string, b: string) {
 }
 
 export function sortedBlogPost(allBlogs: Blog[]) {
-  return allBlogs.sort((a, b) => dateSortDesc(a.date, b.date)).filter((p) => p.draft === false);
+  return allBlogs
+    .sort((a, b) => dateSortDesc(a.date, b.date))
+    .filter((p) => p.draft === false);
 }
 
 type ConvertUndefined<T> = OrNull<{
@@ -26,7 +28,7 @@ type ConvertPick<T> = ConvertUndefined<T> & PickRequired<T>;
  */
 export const pick = <Obj, Keys extends keyof Obj>(
   obj: Obj,
-  keys: Keys[]
+  keys: Keys[],
 ): ConvertPick<{ [K in Keys]: Obj[K] }> => {
   return keys.reduce((acc, key) => {
     acc[key] = obj[key] ?? null;
@@ -35,7 +37,10 @@ export const pick = <Obj, Keys extends keyof Obj>(
   }, {} as any);
 };
 
-export const omit = <Obj, Keys extends keyof Obj>(obj: Obj, keys: Keys[]): Omit<Obj, Keys> => {
+export const omit = <Obj, Keys extends keyof Obj>(
+  obj: Obj,
+  keys: Keys[],
+): Omit<Obj, Keys> => {
   const result = Object.assign({}, obj);
   keys.forEach((key) => {
     delete result[key];
@@ -43,10 +48,10 @@ export const omit = <Obj, Keys extends keyof Obj>(obj: Obj, keys: Keys[]): Omit<
   return result;
 };
 
-export type CoreContent<T> = Omit<T, 'body' | '_raw' | '_id'>;
+export type CoreContent<T> = Omit<T, "body" | "_raw" | "_id">;
 
 export function coreContent<T extends DocumentTypes>(content: T) {
-  return omit(content, ['body', '_raw', '_id']);
+  return omit(content, ["body", "_raw", "_id"]);
 }
 
 export function allCoreContent<T extends DocumentTypes>(contents: T[]) {
@@ -75,7 +80,7 @@ export function getAllTags(allBlogs: Blog[]) {
 export type BlogLink = { slug: string; title: string };
 
 export function formatBlogLink(
-  blog: Omit<Blog, 'body' | '_raw' | '_id'> | null
+  blog: Omit<Blog, "body" | "_raw" | "_id"> | null,
 ): BlogLink | undefined {
   if (blog) {
     return {

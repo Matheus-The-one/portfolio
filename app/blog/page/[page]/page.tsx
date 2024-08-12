@@ -1,13 +1,13 @@
-import ListLayout from '@/layouts/MDX/ListLayout';
-import MainLayout from '@/layouts/MainLayout';
-import { sortedBlogPost } from '@/lib/utils/contentlayer';
-import { POSTS_PER_PAGE } from '@/types/default';
-import { allBlogs } from 'contentlayer/generated';
-import { redirect } from 'next/navigation';
+import ListLayout from "@/layouts/MDX/ListLayout";
+import MainLayout from "@/layouts/MainLayout";
+import { sortedBlogPost } from "@/lib/utils/contentlayer";
+import { POSTS_PER_PAGE } from "@/types/default";
+import { allBlogs } from "contentlayer/generated";
+import { redirect } from "next/navigation";
 
 export const metadata = {
-  title: 'Blog - Mate Papava',
-  description: 'My Blogs - Mate Papava',
+  title: "Blog - Mate Papava",
+  description: "My Blogs - Mate Papava",
 };
 
 export default function BlogPage({ params }: { params: { page: string } }) {
@@ -15,7 +15,7 @@ export default function BlogPage({ params }: { params: { page: string } }) {
   const posts = sortedBlogPost(allBlogs);
   const initialDisplayPosts = posts.slice(
     POSTS_PER_PAGE * (pageNumber - 1),
-    POSTS_PER_PAGE * pageNumber
+    POSTS_PER_PAGE * pageNumber,
   );
   const totalPages = Math.ceil(posts.length / POSTS_PER_PAGE);
 
@@ -25,7 +25,7 @@ export default function BlogPage({ params }: { params: { page: string } }) {
   };
 
   if (pageNumber > totalPages) {
-    redirect('/blog');
+    redirect("/blog");
   }
 
   return (

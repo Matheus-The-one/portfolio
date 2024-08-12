@@ -1,14 +1,14 @@
-import PageTitle from '@/components/PageTitle';
-import PostNavigation from '@/components/PostNavigation';
-import { CoreContent } from '@/lib/utils/contentlayer';
-import siteMetadata from 'content/siteMetadata';
-import type { Blog } from 'contentlayer/generated';
-import { ReactNode } from 'react';
+import PageTitle from "@/components/PageTitle";
+import PostNavigation from "@/components/PostNavigation";
+import { CoreContent } from "@/lib/utils/contentlayer";
+import siteMetadata from "content/siteMetadata";
+import type { Blog } from "contentlayer/generated";
+import { ReactNode } from "react";
 
 const postDateTemplate: Intl.DateTimeFormatOptions = {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
+  year: "numeric",
+  month: "long",
+  day: "numeric",
 };
 
 interface Props {
@@ -32,7 +32,10 @@ export default function PostLayout({ content, children, next, prev }: Props) {
               <span>{author}</span>
               <span>-</span>
               <time dateTime={date}>
-                {`${new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}`}
+                {`${new Date(date).toLocaleDateString(
+                  siteMetadata.locale,
+                  postDateTemplate,
+                )}`}
               </time>
             </div>
             <span className="hidden sm:block">-</span>
@@ -42,7 +45,7 @@ export default function PostLayout({ content, children, next, prev }: Props) {
       </header>
       <div
         className="divide-y divide-gray-200 font-medium dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0"
-        style={{ gridTemplateRows: 'auto 1fr' }}
+        style={{ gridTemplateRows: "auto 1fr" }}
       >
         <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-4 xl:row-span-2 xl:pb-0">
           <div className="prose max-w-none pt-8 pb-8 dark:prose-dark">
