@@ -39,3 +39,6 @@ yarn-error.log*
 
 # Contentlayer
 .contentlayer
+
+# Lock files (using npm/package-lock.json)
+yarn.lock
