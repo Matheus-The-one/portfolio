@@ -6,7 +6,14 @@ export const projects: Project[] = [
     src: "stamoai.png",
     color: "#dbeafe",
     url: "https://stamoai.com/",
-    role: "Lead Developer",
+    role: "Co-Founder",
+  },
+  {
+    title: "cosmio.ai",
+    src: "cosmio.png",
+    color: "#dbeafe",
+    url: "https://cosmio.ai/",
+    role: "Fullstack Developer",
   },
   {
     title: "dgegrdzeli",
@@ -23,10 +30,10 @@ export const projects: Project[] = [
     role: "Fullstack Developer",
   },
   {
-    title: "spoken.io",
-    src: "spoken.webp",
+    title: "APIs on RapidAPI",
+    src: "rapid.png",
     color: "#fee2e2",
-    url: "https://www.spoken.io/",
+    url: "https://rapidapi.com/user/matepapava123",
     role: "Fullstack Developer",
   },
   {
