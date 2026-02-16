@@ -5,7 +5,7 @@
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Analytics**: [Logrocket](https://logrocket.com/)
 - **Content**: [MDX](https://mdxjs.com/) with [Contentlayer](https://www.contentlayer.dev/)
-<img src="./images/psp_product.jpg" alt="PSP Product" width="300" />
+/>
 
 ## Running Locally
 
