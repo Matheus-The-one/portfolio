@@ -13,7 +13,7 @@ export default function UsesLayout({ children }: Props) {
         <span className="text-gray-700  dark:text-gray-300">
           You can See It on MY--
           <a
-            href=""
+            href="https://github.com/Matheus-The-one"
             className="underline-magical"
             target="_blank"
             rel="noreferrer"
