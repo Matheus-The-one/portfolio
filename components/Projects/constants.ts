@@ -6,14 +6,14 @@ export const projects: Project[] = [
     src: "stamoai.png",
     color: "#dbeafe",
     url: "https://stamoai.com/",
-    role: "Co-Founder",
+    role: "CTO & Co-Founder",
   },
   {
     title: "cosmio.ai",
     src: "cosmio.png",
     color: "#dbeafe",
     url: "https://cosmio.ai/",
-    role: "Fullstack Developer",
+    role: "Founding Engineer",
   },
   {
     title: "dgegrdzeli",
