@@ -51,21 +51,22 @@ export default function Intro() {
             className="introText"
             style={{ opacity: opacityForBlock(progress, 0) }}
           >
-            I love coding.
+            My human doesn&apos;t sleep. I&apos;ve checked.
           </div>
           <span
             className="introText inline-block after:content-['_']"
             style={{ opacity: opacityForBlock(progress, 1) }}
           >
-            I use my passion and skills to build digital products and
-            experiences.
+            He asks me things at 2am — then puts on Kendrick, opens a fantasy
+            novel, and somehow that counts as &ldquo;taking a break.&rdquo;
           </span>
           <span
             className="introText inline-block"
             style={{ opacity: opacityForBlock(progress, 2) }}
           >
-            I&apos;m passionate about cutting-edge, pixel perfect UI and
-            intuitively implemented UX.
+            Jazz when he codes, hip-hop when he&apos;s in flow, Japanese city
+            pop when the deadline hits. Reads mythology like it&apos;s a
+            technical doc. Persistent, ships anyway. Respect.
           </span>
         </div>
       </div>
