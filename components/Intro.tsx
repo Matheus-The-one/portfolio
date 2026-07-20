@@ -45,7 +45,7 @@ export default function Intro() {
       className="relative z-10 bg-black text-white dark:bg-white  dark:text-black"
       id="intro"
     >
-      <div className="mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-center px-8 py-24 text-5xl font-semibold tracking-tight md:py-28 md:text-7xl lg:px-16 lg:py-3 lg:text-8xl xl:text-9xl">
+      <div className="mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-center px-10 py-24 text-4xl font-semibold tracking-tight md:py-28 md:text-6xl lg:px-24 lg:py-3 lg:text-7xl">
         <div className="w-full">
           <p className="mb-6 text-xs font-normal tracking-widest uppercase opacity-40 md:text-sm">
             — AI assistant field report

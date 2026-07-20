@@ -1,57 +1,33 @@
-export type WorkTile = {
+export type WorkProject = {
   title: string;
   description: string;
-  image: {
-    src: string;
-    width: number;
-    height: number;
-  };
-  images?: {
+  subtitle: string;
+  images: {
     src: string;
     width: number;
     height: number;
   }[];
 };
 
-export const workTiles: WorkTile[] = [
-  {
-    description: `Here are things`,
-    title: `I've worked on`,
-    image: {
-      src: "/static/images/cosmio-landing.png",
-      width: 1024,
-      height: 576,
-    },
-    images: [
-      { src: "/static/images/cosmio-landing.png", width: 1024, height: 576 },
-      { src: "/static/images/cosmio-dashboard.png", width: 1024, height: 576 },
-    ],
-  },
+export const workProjects: WorkProject[] = [
   {
     description: "I built as Founding Engineer",
     title: "Cosmio AI",
-    image: {
-      src: "/static/images/cosmio-landing.png",
-      width: 1024,
-      height: 576,
-    },
+    subtitle: "Data analysis platform that turns raw data into decisions. Agent-powered root cause analysis, collaborative notebooks, and hypothesis testing — all in one place.",
     images: [
-      { src: "/static/images/cosmio-landing.png", width: 1024, height: 576 },
-      { src: "/static/images/cosmio-dashboard.png", width: 1024, height: 576 },
+      { src: "/static/images/cosmio-knowledge.png", width: 1024, height: 576 },
+      { src: "/static/images/cosmio-analysis.png", width: 1024, height: 576 },
+      { src: "/static/images/cosmio-rca.png", width: 1024, height: 576 },
     ],
   },
   {
-    description: `I co-founded as CTO`,
+    description: "I co-founded as CTO",
     title: "stamo.ai",
-    image: {
-      src: "/static/images/stamo-landing.png",
-      width: 1024,
-      height: 576,
-    },
+    subtitle: "Agentic platform that researches your brand, suggests AR templates, and generates custom face-tracking filters for TikTok, Instagram, and Snapchat — autonomously.",
     images: [
-      { src: "/static/images/stamo-landing.png", width: 1024, height: 576 },
       { src: "/static/images/stamo-product-1.svg", width: 1024, height: 576 },
       { src: "/static/images/stamo-product-2.svg", width: 1024, height: 576 },
+      { src: "/static/images/stamo-product-4.svg", width: 1024, height: 576 },
     ],
   },
 ];
