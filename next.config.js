@@ -10,4 +10,9 @@ module.exports = withContentlayer({
     dirs: ["app", "components", "lib", "layouts", "scripts"],
   },
   swcMinify: true,
+  images: {
+    dangerouslyAllowSVG: true,
+    contentDispositionType: "attachment",
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+  },
 });

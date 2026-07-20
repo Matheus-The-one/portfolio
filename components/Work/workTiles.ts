@@ -14,8 +14,8 @@ export const workTiles: WorkTile[] = [
     title: `I've worked on`,
     image: {
       src: "/static/images/cosmio-landing.png",
-      width: 600,
-      height: 770,
+      width: 1024,
+      height: 576,
     },
   },
   {
@@ -23,26 +23,44 @@ export const workTiles: WorkTile[] = [
     title: "Cosmio AI",
     image: {
       src: "/static/images/cosmio-landing.png",
-      width: 600,
-      height: 554,
+      width: 1024,
+      height: 576,
     },
   },
   {
-    description: `Agent-powered analytics`,
+    description: "Agent-powered analytics",
     title: "Cosmio Dashboard",
     image: {
       src: "/static/images/cosmio-dashboard.png",
-      width: 600,
-      height: 717,
+      width: 1024,
+      height: 576,
     },
   },
   {
     description: `I co-founded as CTO`,
     title: "stamo.ai",
     image: {
-      src: "/static/images/project/stamoai.png",
-      width: 600,
-      height: 717,
+      src: "/static/images/stamo-landing.png",
+      width: 1024,
+      height: 576,
+    },
+  },
+  {
+    description: `AR effects platform`,
+    title: "stamo.ai — How it works",
+    image: {
+      src: "/static/images/stamo-product-1.svg",
+      width: 1024,
+      height: 576,
+    },
+  },
+  {
+    description: `Brand-native AR generation`,
+    title: "stamo.ai — Agent workflow",
+    image: {
+      src: "/static/images/stamo-product-2.svg",
+      width: 1024,
+      height: 576,
     },
   },
 ];
