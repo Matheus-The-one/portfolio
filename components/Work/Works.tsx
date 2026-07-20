@@ -44,7 +44,7 @@ export default function Works() {
               </p>
             </div>
 
-            <div className="relative flex items-center justify-center py-8 lg:py-16 min-h-[400px] lg:min-h-[600px]">
+            <div className="relative flex items-center justify-center py-8 lg:py-0 min-h-[450px] lg:min-h-[600px]">
               <CardSwap
                 cardDistance={50}
                 verticalDistance={50}
@@ -52,17 +52,17 @@ export default function Works() {
                 pauseOnHover={true}
                 skewAmount={4}
                 easing="elastic"
-                width={580}
-                height={360}
+                width={620}
+                height={400}
               >
                 {project.images.map((img, i) => (
-                  <Card key={img.src} customClass="overflow-hidden !bg-black !border-white/10 p-0 flex items-center justify-center">
+                  <Card key={img.src} customClass="overflow-hidden !bg-black !border-white/10 p-2 flex items-center justify-center">
                     <Image
                       src={img.src}
                       alt={`${project.title} ${i + 1}`}
                       width={img.width}
                       height={img.height}
-                      className="w-full h-full object-contain"
+                      className="w-full h-full object-contain rounded-lg"
                     />
                   </Card>
                 ))}

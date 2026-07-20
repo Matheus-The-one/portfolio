@@ -13,7 +13,7 @@ export const workProjects: WorkProject[] = [
   {
     description: "I built as Founding Engineer",
     title: "Cosmio AI",
-    subtitle: "Data analysis platform that turns raw data into decisions. Agent-powered root cause analysis, collaborative notebooks, and hypothesis testing — all in one place.",
+    subtitle: "Data analysis platform that turns raw data into decisions. Agent-powered root cause analysis, collaborative notebooks, and hypothesis testing-all in one place.",
     images: [
       { src: "/static/images/cosmio-knowledge.png", width: 1024, height: 576 },
       { src: "/static/images/cosmio-analysis.png", width: 1024, height: 576 },
