@@ -25,9 +25,9 @@ export const workProjects: WorkProject[] = [
     title: "stamo.ai",
     subtitle: "Agentic platform that researches your brand, suggests AR templates, and generates custom face-tracking filters for TikTok, Instagram, and Snapchat — autonomously.",
     images: [
+      { src: "/static/images/stamo-landing.png", width: 1024, height: 576 },
+      { src: "/static/images/stamo-dashboard.png", width: 1024, height: 576 },
       { src: "/static/images/stamo-product-1.svg", width: 1024, height: 576 },
-      { src: "/static/images/stamo-product-2.svg", width: 1024, height: 576 },
-      { src: "/static/images/stamo-product-4.svg", width: 1024, height: 576 },
     ],
   },
 ];
