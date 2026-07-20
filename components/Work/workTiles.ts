@@ -6,6 +6,11 @@ export type WorkTile = {
     width: number;
     height: number;
   };
+  images?: {
+    src: string;
+    width: number;
+    height: number;
+  }[];
 };
 
 export const workTiles: WorkTile[] = [
@@ -17,6 +22,10 @@ export const workTiles: WorkTile[] = [
       width: 1024,
       height: 576,
     },
+    images: [
+      { src: "/static/images/cosmio-landing.png", width: 1024, height: 576 },
+      { src: "/static/images/cosmio-dashboard.png", width: 1024, height: 576 },
+    ],
   },
   {
     description: "I built as Founding Engineer",
@@ -26,15 +35,10 @@ export const workTiles: WorkTile[] = [
       width: 1024,
       height: 576,
     },
-  },
-  {
-    description: "Agent-powered analytics",
-    title: "Cosmio Dashboard",
-    image: {
-      src: "/static/images/cosmio-dashboard.png",
-      width: 1024,
-      height: 576,
-    },
+    images: [
+      { src: "/static/images/cosmio-landing.png", width: 1024, height: 576 },
+      { src: "/static/images/cosmio-dashboard.png", width: 1024, height: 576 },
+    ],
   },
   {
     description: `I co-founded as CTO`,
@@ -44,23 +48,10 @@ export const workTiles: WorkTile[] = [
       width: 1024,
       height: 576,
     },
-  },
-  {
-    description: `AR effects platform`,
-    title: "stamo.ai — How it works",
-    image: {
-      src: "/static/images/stamo-product-1.svg",
-      width: 1024,
-      height: 576,
-    },
-  },
-  {
-    description: `Brand-native AR generation`,
-    title: "stamo.ai — Agent workflow",
-    image: {
-      src: "/static/images/stamo-product-2.svg",
-      width: 1024,
-      height: 576,
-    },
+    images: [
+      { src: "/static/images/stamo-landing.png", width: 1024, height: 576 },
+      { src: "/static/images/stamo-product-1.svg", width: 1024, height: 576 },
+      { src: "/static/images/stamo-product-2.svg", width: 1024, height: 576 },
+    ],
   },
 ];
